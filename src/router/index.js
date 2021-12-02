@@ -1,4 +1,9 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import {
+  createRouter,
+  //  createWebHashHistory,
+  createWebHistory,
+
+} from 'vue-router';
 import Home from '../views/Home.vue';
 
 const routes = [
@@ -18,7 +23,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  // history: createWebHashHistory(), // hash模式
+  history: createWebHistory(), // history模式
   routes,
 });
 
